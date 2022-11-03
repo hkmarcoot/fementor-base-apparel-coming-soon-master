@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/hkmarcoot/fementor-base-apparel-coming-soon-master)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://hkmarcoot.github.io/fementor-base-apparel-coming-soon-master/)
 
 ## My process
 

@@ -17,30 +17,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="all-container">
+    <div role="container" class="all-container">
       <!-- <div class="scaling-svg-container"></div> -->
-      <div class="left-side-content">
-        <img id="logo" src="./images/logo.svg" />
+      <div role="left-side-content" class="left-side-content">
+        <img role="logo" id="logo" src="./images/logo.svg" />
         <img
+          role="mobile-image"
           class="hero-mobile"
           alt="hero-mobile"
           src="./images/hero-mobile.jpg"
         />
-        <div class="h1-container">
+        <header role="banner" class="h1-container">
           <h1>
             <span class="h1-first">We're</span
             ><span class="h1-second"> coming soon</span>
           </h1>
-        </div>
-        <div class="p-container">
+        </header>
+        <main role="main" class="p-container">
           <p>
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-        </div>
+        </main>
 
-        <form autocomplete="off">
+        <form role="email-form" autocomplete="off">
           <div>
             <input
               type="email"
@@ -49,17 +50,19 @@
               placeholder="Email Address"
               required
             />
-            <label for="email"><img src="./images/icon-error.svg" /></label>
+            <label role="label" for="email"
+              ><img role="icon-error" src="./images/icon-error.svg"
+            /></label>
 
-            <button type="submit">
-              <img src="./images/icon-arrow.svg" alt="" />
+            <button role="submit-button" type="submit">
+              <img role="icon-arrow" src="./images/icon-arrow.svg" alt="" />
             </button>
           </div>
-          <p class="error">Please provide a valid email</p>
+          <p role="error" class="error">Please provide a valid email</p>
         </form>
 
-        <footer>
-          <p class="attribution">
+        <footer role="contentinfo">
+          <p role="attribution" class="attribution">
             Challenge by
             <a
               href="https://www.frontendmentor.io?ref=challenge"
@@ -69,7 +72,12 @@
           </p>
         </footer>
       </div>
-      <img class="hero-desktop-image" src="./images/hero-desktop.jpg" alt="" />
+      <img
+        role="desktop-image"
+        class="hero-desktop-image"
+        src="./images/hero-desktop.jpg"
+        alt=""
+      />
     </div>
     <script src="./index.js"></script>
   </body>
