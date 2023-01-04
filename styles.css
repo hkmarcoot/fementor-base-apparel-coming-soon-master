@@ -136,6 +136,16 @@ form picture {
   /* display: none; */
 }
 
+form .error-icon,
+form .error-text {
+  display: none;
+}
+
+form.error .error-icon,
+form.error .error-text {
+  display: block;
+}
+
 /* .error {
   display: none;
 } */

@@ -1,8 +1,8 @@
 const submit = document.querySelector(".submit");
-const error = document.querySelector(".error");
+const errorText = document.querySelector(".error-text");
 const form = document.querySelector("form");
 const input = document.querySelector("input");
-const label = document.querySelector("label");
+const errorIcon = document.querySelector(".error-icon");
 
 form.addEventListener("submit", validate);
 submit.addEventListener("click", validate);
@@ -13,12 +13,16 @@ function validate(e) {
   const inputValue = input.value.trim();
   console.log(inputValue);
 
-  if (!isEmail(inputValue)) {
-    error.style.display = "block";
-    label.style.display = "block";
+  if (isEmail(inputValue)) {
+    // errorText.style.display = "none";
+    // errorIcon.style.display = "none";
+    form.classList.remove("error");
+    form.classList.remove("error");
   } else {
-    error.style.display = "none";
-    label.style.display = "none";
+    // errorText.style.display = "block";
+    // errorIcon.style.display = "block";
+    form.classList.add("error");
+    form.classList.add("error");
   }
 }
 
