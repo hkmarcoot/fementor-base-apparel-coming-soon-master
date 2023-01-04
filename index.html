@@ -17,60 +17,68 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="all-container">
-      <!-- <div class="scaling-svg-container"></div> -->
-      <div class="left-side-content">
-        <img id="logo" src="./images/logo.svg" />
+    <main>
+      <div class="all-container">
+        <!-- <div class="scaling-svg-container"></div> -->
+        <div class="left-side-content">
+          <img id="logo" src="./images/logo.svg" alt="logo" />
+          <img
+            class="hero-mobile"
+            alt="hero-mobile"
+            src="./images/hero-mobile.jpg"
+          />
+          <header class="h1-container">
+            <h1>
+              <span class="h1-first">We're</span
+              ><span class="h1-second"> coming soon</span>
+            </h1>
+          </header>
+          <main class="p-container">
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </main>
+
+          <form autocomplete="off">
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <label for="email"
+                ><img src="./images/icon-error.svg" alt="error icon"
+              /></label>
+
+              <button type="submit">
+                <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <p class="error">Please provide a valid email</p>
+          </form>
+
+          <footer>
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by <a href="#">Marco Tsang</a>.
+            </p>
+          </footer>
+        </div>
         <img
-          class="hero-mobile"
-          alt="hero-mobile"
-          src="./images/hero-mobile.jpg"
+          class="hero-desktop-image"
+          src="./images/hero-desktop.jpg"
+          alt=""
         />
-        <header class="h1-container">
-          <h1>
-            <span class="h1-first">We're</span
-            ><span class="h1-second"> coming soon</span>
-          </h1>
-        </header>
-        <main class="p-container">
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-        </main>
-
-        <form autocomplete="off">
-          <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
-            <label for="email"><img src="./images/icon-error.svg" /></label>
-
-            <button type="submit">
-              <img src="./images/icon-arrow.svg" alt="" />
-            </button>
-          </div>
-          <p class="error">Please provide a valid email</p>
-        </form>
-
-        <footer>
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a href="#">Marco Tsang</a>.
-          </p>
-        </footer>
       </div>
-      <img class="hero-desktop-image" src="./images/hero-desktop.jpg" alt="" />
-    </div>
-    <script src="./index.js"></script>
+      <script src="./index.js"></script>
+    </main>
   </body>
 </html>
